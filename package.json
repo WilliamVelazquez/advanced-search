@@ -4,7 +4,8 @@
   "description": "Search box to filter multiple data sets by type and content, developed with ReactJs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --open --config ./webpack.dev.config.js",
+    "prod": "webpack -p --env.NODE_ENV=production --env.production --progress"
   },
   "repository": {
     "type": "git",
@@ -62,6 +63,7 @@
     "url-loader": "4.1.0",
     "webpack": "4.44.0",
     "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3.11.0"
+    "webpack-dev-server": "3.11.0",
+    "serialize-javascript": ">=2.1.1"
   }
 }
