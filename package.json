@@ -1,7 +1,7 @@
 {
   "name": "advanced-search",
   "version": "1.0.0",
-  "description": "Search box to filter multiple data sets by type and content, developed with ReactJs.",
+  "description": "Search box to filter multiple data sets by type and content, developed with ReactJs and Elastic Search.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./webpack.dev.config.js",
@@ -16,6 +16,7 @@
   "keywords": [
     "React",
     "Searching",
+    "ElasticSearch",
     "Reconciliation",
     "Simetrik",
     "WilliamVelazquez"
