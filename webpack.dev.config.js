@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 require('dotenv').config();
 
@@ -58,12 +59,6 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.(json|geojson)$/,
-        use: {
-          loader: 'json-loader',
-        },
-      },
     ],
   },
   plugins: [
@@ -71,6 +66,11 @@ module.exports = {
       filename: './index.html',
       template: './public/index.html',
       favicon: './public/favicon.ico',
+    }),
+    new webpack.DefinePlugin({
+      'process.env.APPS': JSON.stringify(process.env.APPS || ''),
+      'process.env.CLUSTER_URL': JSON.stringify(process.env.CLUSTER_URL || ''),
+      'process.env.CREDENTIALS': JSON.stringify(process.env.CREDENTIALS || ''),
     }),
   ],
 };
