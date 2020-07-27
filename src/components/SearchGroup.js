@@ -3,6 +3,8 @@
 import React from 'react';
 import { DataSearch, ReactiveList, SelectedFilters, DateRange, RangeSlider } from '@appbaseio/reactivesearch';
 import styled from 'styled-components';
+import ItemsList from './ItemsList';
+import ListTitle from './ListTitle';
 import NoResultsMessage from './NoResultsMessage';
 
 const BoxContainer = styled.div`
@@ -102,8 +104,8 @@ const SearchGroup = (props) => {
           <DataSearch
             componentId='BúsquedaDeTexto'
             placeholder='Buscar información...'
-            dataField={['company', 'address', 'email', 'tags']}
-            fieldWeights={[4, 1, 2, 3]}
+            dataField={['company', 'address', 'tags', 'name.firstName', 'name.lastName', 'email', 'description']}
+            fieldWeights={[8, 2, 5, 6, 7, 4, 3]}
             searchInputId='NameSearch'
             iconPosition='right'
             showClear
@@ -160,6 +162,51 @@ const SearchGroup = (props) => {
           />
         </FiltersContainer>
       </BoxContainer>
+
+      <ResultsContainer>
+        <ListContainer>
+          <ListTitle title='Usuarios' />
+          <ReactiveList
+            componentId='queryUsersResult'
+            dataField='company' //{['company', 'name.firstName', 'name.lastName', 'email', 'address', 'age']}//'company'
+            from={0}
+            size={4}
+            pages={5}
+            pagination={true}
+            className='result-cards'
+            renderItem={(item) => ItemsList(item, 'user')}
+            defaultQuery={() => defaultQuery('users')}
+            renderError={(error) => renderError(error)}
+            renderNoResults={() => <NoResultsMessage />}
+            renderResultStats={renderResultStats}
+            // customQuery={customQuery}
+            react={{
+              'and': ['BúsquedaDeTexto', 'RangoDeEdad'], //, 'SearchSensor'
+            }}
+            // renderPagination={(pagination) => renderPagination(pagination)}
+          />
+        </ListContainer>
+        <ListContainer>
+          <ListTitle title='Fuentes' />
+          <ReactiveList
+            componentId='querySourcesResult'
+            dataField='company' //{['company', 'address', 'description', 'timestamp.createdAt']}
+            from={0}
+            size={4}
+            pages={5}
+            pagination={true}
+            className='result-cards'
+            renderItem={(item) => ItemsList(item, 'source')}
+            defaultQuery={() => defaultQuery('sources')}
+            renderError={(error) => renderError(error)}
+            renderNoResults={() => <NoResultsMessage />}
+            renderResultStats={renderResultStats}
+            react={{
+              'and': ['BúsquedaDeTexto', 'FechaDeRegistro'], //, 'SearchSensor'
+            }}
+          />
+        </ListContainer>
+      </ResultsContainer>
     </>
   );
 };

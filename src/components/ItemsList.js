@@ -82,7 +82,7 @@ const ItemsList = (item, type) => {
               <ResultList.Content>
                 <ResultList.Description>
                   <div>
-                    <div dangerouslySetInnerHTML={{ __html: `<strong>Nombre:</strong> ${item.name}` }} />
+                    {/* <div dangerouslySetInnerHTML={{ __html: `<strong>Nombre:</strong> ${item.name}` }} /> */}
                     <div dangerouslySetInnerHTML={{ __html: `<strong>Compañía:</strong> ${item.company}` }} />
                     <div dangerouslySetInnerHTML={{ __html: `<strong>Fecha de Registro:</strong> ${item.timestamp.createdAt}` }} />
                     <div className='descriptions' dangerouslySetInnerHTML={{ __html: `<strong>Descripción:</strong> ${item.description}` }} />
