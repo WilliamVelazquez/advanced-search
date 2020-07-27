@@ -18,7 +18,7 @@ module.exports = {
     filename: 'js/[name].js',
   },
   devServer: {
-    port: process.env.PORT || 9000,
+    port: process.env.PORT || 3001,
   },
   node: {
     fs: 'empty',

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/no-danger */
 /* eslint-disable react/jsx-indent-props */
