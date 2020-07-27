@@ -14,9 +14,9 @@ const App = (props) => {
     <Layout>
       {isLoading && <CubeLoader />}
       <ReactiveBase
-        app={process.env.APPS}
-        credentials={process.env.CREDENTIALS}
-        url={process.env.CLUSTER_URL}
+        app={process.env.APPS || ''}
+        credentials={process.env.CREDENTIALS || ''}
+        url={process.env.CLUSTER_URL || ''}
       >
         <SearchGroup />
       </ReactiveBase>
