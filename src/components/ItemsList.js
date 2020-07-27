@@ -12,8 +12,8 @@ import USER_ICON from '../assets/images/user.png';
 
 const CardContainer = styled.div`
   @media (max-width: 468px) {
-    width: 80%;
     overflow: auto;
+    width: calc(100% - 16%);
   }
 `;
 
