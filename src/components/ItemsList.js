@@ -104,6 +104,66 @@ const ItemsList = (item, type) => {
       );
       break;
 
+    case 'board':
+      component = (
+        <ReactiveList.ResultListWrapper key={item._id}>
+          <CardContainer>
+            <ResultList>
+              <ResultList.Content>
+                <ResultList.Description>
+                  <div>
+                    <div dangerouslySetInnerHTML={{ __html: `<strong>Nombre:</strong> ${item.dashboardName}` }} />
+                    <div dangerouslySetInnerHTML={{ __html: `<strong>Fecha de Registro:</strong> ${item.timestamp.createdAt}` }} />
+                    <div className='descriptions' dangerouslySetInnerHTML={{ __html: `<strong>Descripción:</strong> ${item.description}` }} />
+                    <TagsContainer>
+                      {
+                        Array.isArray(item.tags) ?
+                        item.tags.map((tag, index) => {
+                          return <TagBadge key={`${item._id}_${index}_${tag}`} color={COLORS[Math.floor(Math.random() * 13)]} dangerouslySetInnerHTML={{ __html: tag }} />;
+                        }) :
+                        <TagBadge key={`${item._id}__${item.tags}`} color={COLORS[Math.floor(Math.random() * 13)]} dangerouslySetInnerHTML={{ __html: item.tags }} />
+                      }
+                    </TagsContainer>
+                  </div>
+                </ResultList.Description>
+              </ResultList.Content>
+            </ResultList>
+          </CardContainer>
+        </ReactiveList.ResultListWrapper>
+      );
+      break;
+
+    case 'reconciliation':
+      component = (
+        <ReactiveList.ResultListWrapper key={item._id}>
+          <CardContainer>
+            <ResultList>
+              <ResultList.Content>
+                <ResultList.Description>
+                  <div>
+                    <div dangerouslySetInnerHTML={{ __html: `<strong>Balance:</strong> ${item.balance}` }} />
+                    <div dangerouslySetInnerHTML={{ __html: `<strong>Fecha de Registro:</strong> ${item.timestamp.createdAt}` }} />
+                    <div dangerouslySetInnerHTML={{ __html: `<strong>Nombre de la Conciliación:</strong> ${item.conciliationName}` }} />
+                    <div dangerouslySetInnerHTML={{ __html: `<strong>Fuenta A:</strong> ${item.sourceA} <strong>Fuenta B:</strong> ${item.sourceB}` }} />
+                    <div className='descriptions' dangerouslySetInnerHTML={{ __html: `<strong>Descripción:</strong> ${item.description}` }} />
+                    <TagsContainer>
+                      {
+                        Array.isArray(item.tags) ?
+                        item.tags.map((tag, index) => {
+                          return <TagBadge key={`${item._id}_${index}_${tag}`} color={COLORS[Math.floor(Math.random() * 13)]} dangerouslySetInnerHTML={{ __html: tag }} />;
+                        }) :
+                        <TagBadge key={`${item._id}__${item.tags}`} color={COLORS[Math.floor(Math.random() * 13)]} dangerouslySetInnerHTML={{ __html: item.tags }} />
+                      }
+                    </TagsContainer>
+                  </div>
+                </ResultList.Description>
+              </ResultList.Content>
+            </ResultList>
+          </CardContainer>
+        </ReactiveList.ResultListWrapper>
+      );
+      break;
+
     default:
       console.log('Type not found!');
       break;

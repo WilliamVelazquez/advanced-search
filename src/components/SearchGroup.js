@@ -104,8 +104,8 @@ const SearchGroup = (props) => {
           <DataSearch
             componentId='BúsquedaDeTexto'
             placeholder='Buscar información...'
-            dataField={['company', 'address', 'tags', 'name.firstName', 'name.lastName', 'email', 'description']}
-            fieldWeights={[8, 2, 5, 6, 7, 4, 3]}
+            dataField={['company', 'address', 'tags', 'name.firstName', 'name.lastName', 'email', 'description', 'sourceA', 'sourceB', 'conciliationName', 'dashboardName']}
+            fieldWeights={[11, 4, 7, 10, 9, 8, 1, 2, 3, 5, 6]}
             searchInputId='NameSearch'
             iconPosition='right'
             showClear
@@ -181,7 +181,7 @@ const SearchGroup = (props) => {
             renderResultStats={renderResultStats}
             // customQuery={customQuery}
             react={{
-              'and': ['BúsquedaDeTexto', 'RangoDeEdad'], //, 'SearchSensor'
+              'and': ['BúsquedaDeTexto', 'RangoDeEdad'],
             }}
             // renderPagination={(pagination) => renderPagination(pagination)}
           />
@@ -202,7 +202,47 @@ const SearchGroup = (props) => {
             renderNoResults={() => <NoResultsMessage />}
             renderResultStats={renderResultStats}
             react={{
-              'and': ['BúsquedaDeTexto', 'FechaDeRegistro'], //, 'SearchSensor'
+              'and': ['BúsquedaDeTexto', 'FechaDeRegistro'],
+            }}
+          />
+        </ListContainer>
+        <ListContainer>
+          <ListTitle title='Tableros' />
+          <ReactiveList
+            componentId='queryBoardsResult'
+            dataField='company' //{['company', 'address', 'description', 'timestamp.createdAt']}
+            from={0}
+            size={5}
+            pages={5}
+            pagination={true}
+            className='result-cards'
+            renderItem={(item) => ItemsList(item, 'board')}
+            defaultQuery={() => defaultQuery('boards')}
+            renderError={(error) => renderError(error)}
+            renderNoResults={() => <NoResultsMessage />}
+            renderResultStats={renderResultStats}
+            react={{
+              'and': ['BúsquedaDeTexto', 'FechaDeRegistro'],
+            }}
+          />
+        </ListContainer>
+        <ListContainer>
+          <ListTitle title='Conciliaciones' />
+          <ReactiveList
+            componentId='queryReconciliationsResult'
+            dataField='company' //{['company', 'address', 'description', 'timestamp.createdAt']}
+            from={0}
+            size={4}
+            pages={5}
+            pagination={true}
+            className='result-cards'
+            renderItem={(item) => ItemsList(item, 'reconciliation')}
+            defaultQuery={() => defaultQuery('reconciliations')}
+            renderError={(error) => renderError(error)}
+            renderNoResults={() => <NoResultsMessage />}
+            renderResultStats={renderResultStats}
+            react={{
+              'and': ['BúsquedaDeTexto', 'FechaDeRegistro'],
             }}
           />
         </ListContainer>
