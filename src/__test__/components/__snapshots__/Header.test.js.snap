@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshot Verifying Header Component UI 1`] = `
+.c0 {
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: #22242c;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.c2 {
+  margin: 0px;
+  width: 130px;
+  display: block;
+}
+
+.c3 {
+  color: #3c75ff;
+  cursor: pointer;
+}
+
+.c4 {
+  width: 100%;
+  padding-top: 10px;
+}
+
+@media (max-width:991px) {
+  .c1 {
+    width: 90%;
+  }
+}
+
+@media (max-width:1140px) {
+  .c1 {
+    width: 960px;
+  }
+}
+
+@media (max-width:1297px) {
+  .c1 {
+    width: 1180px;
+  }
+}
+
+@media (max-width:1400px) {
+  .c1 {
+    width: 1200px;
+  }
+}
+
+@media (max-width:1600px) {
+  .c1 {
+    width: 1300px;
+  }
+}
+
+@media (max-width:1920px) {
+  .c1 {
+    width: 92%;
+  }
+}
+
+<header
+  className="c0"
+>
+  <article
+    className="c1"
+  >
+    <figure
+      className="c2"
+    >
+      <a
+        className="c3"
+        href="/"
+      >
+        <img
+          alt="Logo"
+          className="c4"
+        />
+      </a>
+    </figure>
+  </article>
+</header>
+`;

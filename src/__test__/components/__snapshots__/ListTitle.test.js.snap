@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListTitle Snapshot Verifying ListTitle Component UI 1`] = `
+.c0 {
+  margin: 0;
+  color: #3c75ff;
+  font-size: 24px;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.c0:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 40%;
+  height: 4px;
+  background: #3c75ff;
+  border-radius: 10px;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+<h2
+  className="c0"
+  color="#3c75ff"
+>
+  
+</h2>
+`;

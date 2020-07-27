@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CubeLoader Snapshot Verifying CubeLoader Component UI 1`] = `
+.c0 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.c1 {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  width: 73px;
+  height: 73px;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-left: -37px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.c4 {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c4:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #3c75ff;
+  -webkit-animation: gofipJ 2.76s infinite linear both;
+  animation: gofipJ 2.76s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.c5 {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  -ms-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg);
+}
+
+.c5:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #3c75ff;
+  -webkit-animation: gofipJ 2.76s infinite linear both;
+  animation: gofipJ 2.76s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.c5:before {
+  -webkit-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+
+.c7 {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  -ms-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg);
+}
+
+.c7:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #3c75ff;
+  -webkit-animation: gofipJ 2.76s infinite linear both;
+  animation: gofipJ 2.76s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.c7:before {
+  -webkit-animation-delay: 0.69s;
+  animation-delay: 0.69s;
+}
+
+.c6 {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  -ms-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg);
+}
+
+.c6:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #3c75ff;
+  -webkit-animation: gofipJ 2.76s infinite linear both;
+  animation: gofipJ 2.76s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.c6:before {
+  -webkit-animation-delay: 1.04s;
+  animation-delay: 1.04s;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+          color="#3c75ff"
+        />
+        <div
+          className="c5"
+          color="#3c75ff"
+        />
+        <div
+          className="c6"
+          color="#3c75ff"
+        />
+        <div
+          className="c7"
+          color="#3c75ff"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

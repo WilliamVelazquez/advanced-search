@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoResultsMessage Snapshot Verifying NoResultsMessage Component UI 1`] = `
+.c1 {
+  stroke-width: 0;
+  stroke: #000000;
+  fill: #000000;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  margin: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    font-size: 20px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className=""
+    height="32px"
+    size="32px"
+    viewBox="0 0 32 32"
+    width="32px"
+  >
+    <g
+      data-name="Notification"
+    >
+      <path
+        className="c1"
+        color="#000000"
+        d="M16 3c-3.472 0-6.737 1.352-9.192 3.808s-3.808 5.72-3.808 9.192c0 3.472 1.352 6.737 3.808 9.192s5.72 3.808 9.192 3.808c3.472 0 6.737-1.352 9.192-3.808s3.808-5.72 3.808-9.192c0-3.472-1.352-6.737-3.808-9.192s-5.72-3.808-9.192-3.808zM16 0v0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16zM14 22h4v4h-4zM14 6h4v12h-4z"
+        data-name="Notification-path"
+      />
+    </g>
+  </svg>
+  <p
+    className="c2"
+  >
+    Lo sentimos, no pudimos encontrar ningún resultado que coincida.
+  </p>
+</div>
+`;
