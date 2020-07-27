@@ -7,7 +7,7 @@ import LOGO from '../assets/images/logo.svg';
 
 const Content = styled.div`
   padding: 1em;
-  padding-top: 100px;
+  padding-top: 110px;
 `;
 
 const Layout = (props) => {
