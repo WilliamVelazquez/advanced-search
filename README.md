@@ -2,10 +2,7 @@
 
 Search box to filter multiple data sets by type and content, developed with ReactJs and Elastic Search.
 
-<div style='background:#22242c; text-align:center; padding: 10px; width: 200px; margin: 0 auto;'>
-  <img src="./src/assets/images/logo.svg" alt='Simetrik'>
-</div>
-
+![App](./.readme-static/logo.png)
 
 ### 🚀 Links
 
